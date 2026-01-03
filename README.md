@@ -91,3 +91,15 @@ SUBMISSION/            # Submission templates and instructions
 Rebuild the submission ZIP
    ```bash 
 zip -r Figures_and_Tables.zip figures tables
+
+## Quick Start (Local)
+
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+
+# run pipeline step-by-step
+python run_step2_ingest_clean.py
+python run_step3_star_schema.py
+python run_step4_generate_rq_outputs.py
