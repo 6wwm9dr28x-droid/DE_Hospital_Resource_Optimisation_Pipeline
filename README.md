@@ -60,9 +60,7 @@ The pipeline performs **ingestion → cleaning → feature derivation → star s
 2. Trigger the DAG:
    ```bash
    docker compose exec webserver airflow dags trigger hospital_project_pipeline
-3. Trigger the DAG:
-   ```bash
-   docker compose exec webserver airflow dags trigger hospital_project_pipeline
 ### B) Local Python (no Airflow)
-## Rebuild the submission ZIP 
+Rebuild the submission ZIP
+   ```bash 
 zip -r Figures_and_Tables.zip figures tables
