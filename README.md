@@ -47,6 +47,17 @@ The pipeline performs **ingestion → cleaning → feature derivation → star s
 
 ---
 
+## Project Structure
+
+dags/                  # Airflow DAG definition
+src/                   # Core pipeline logic
+data/                  # Intermediate and processed data (no raw uploads)
+figures/               # Auto-generated PDF figures
+tables/                # Auto-generated tables (CSV/XLSX)
+SUBMISSION/            # Submission templates and instructions
+
+---
+
 ## Team & Roles
 
 - **Magomed Makhsudov** — Technical Lead  
