@@ -1,5 +1,20 @@
 # Hospital Resource Optimization Pipeline (Data Engineering)
 
+---
+
+## Table of Contents
+
+- [Project Overview](#project-overview)
+- [Deliverables](#deliverables)
+- [Team & Roles](#team--roles)
+- [Datasets](#datasets)
+- [Research Questions](#research-questions)
+- [Project Structure](#project-structure)
+- [Reproducibility](#reproducibility)
+- [Reproduce the Results](#reproduce-the-results)
+
+---
+
 This project implements a reproducible **data‑engineering pipeline** integrating:
 - **Outpatient appointments** — `hospital-KaggleV2-May-2016.csv`
 - **Inpatient admissions** — `HDHI Admission data.csv`
