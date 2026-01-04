@@ -88,12 +88,6 @@ The pipeline performs **ingestion → cleaning → feature derivation → star s
    ```bash
    docker compose exec webserver airflow dags trigger hospital_project_pipeline
 ### B) Local Python (no Airflow)
-Rebuild the submission ZIP
-   ```bash 
- zip -r Figures_and_Tables.zip figures tables
-
-## Quick Start (Local)
-
    ```bash
 python3 -m venv .venv
 source .venv/bin/activate
@@ -103,6 +97,10 @@ pip install -r requirements.txt
 python run_step2_ingest_clean.py
 python run_step3_star_schema.py
 python run_step4_generate_rq_outputs.py
-```
+   ```
 
+### C) Rebuild the submission ZIP (after pipeline completion)
+```bash
+zip -r Figures_and_Tables.zip figures tables
+```
 ---
